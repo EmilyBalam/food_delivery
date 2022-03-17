@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class loginP extends StatelessWidget {
+class LoginP extends StatelessWidget {
   //const HomePage({Key? key}) : super(key: key);
   final estiloTitulo = TextStyle(
     fontSize: 40.0,
@@ -41,7 +41,7 @@ class loginP extends StatelessWidget {
           'Skip',
           style: TextStyle(fontSize: 15.0),
         ),
-        onPressed: () {},
+        onPressed: () => Navigator.pushNamed(context, 'efood'),
       ),
     );
   }
@@ -92,7 +92,7 @@ class loginP extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10.0)),
             padding: EdgeInsets.symmetric(horizontal: 150.0, vertical: 15.0),
           ),
-          onPressed: () {},
+          onPressed: () => Navigator.pushNamed(context, 'welcome'),
           child: Text(
             'Let\'s Start',
             style: TextStyle(fontSize: 20.0),
